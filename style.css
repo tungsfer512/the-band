@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    font-family: 'Fuzzy Bubbles', cursive;
+    scroll-behavior: smooth;
+}
+
+
+.start-point {
+    height: 4rem;
+    width: 4rem;
+    font-size: 4rem;
+    border: 2px solid #8a8484;
+    border-radius: 4px;
+    /* color: white; */
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 6px 3px white;
+    z-index: 5
+    
+}
+
+.start-point a {
+    color: red;
+}
+
+#nav {
+    background-color: #000000;
+    width: 100vw;
+    height: 50px;
+    /* height: max-content; */
+    color:black;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-transform: uppercase;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navigation-bar > ul > li{
+    display: block;
+    float: left;
+}
+
+.navigation-bar ul li a {
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0 2rem;
+
+}
+
+.navigation-bar ul li a:hover {
+    background-color: #6e6e6e;
+    color:black;
+}
+
+.navigation-bar .navigation-bar__sub-nav ul {
+    /* position: relative; */
+    box-shadow: 5px 5px 13px 0px #7d7777;
+}
+
+.navigation-bar .navigation-bar__sub-nav li{
+    display: none;
+    background-color: #a19c9c;
+    border-bottom: 1px solid black;
+}
+
+.navigation-bar .navigation-bar__sub-nav:hover li {
+    display: block;
+    color: black;
+}
+
+.navigation-bar .navigation-bar__sub-nav li:hover {
+    background-color: #6e6e6e;
+    color:black;
+}
+
+.navigation-bar__sub-nav ul li a {
+    color: black;
+    display: block;
+}
+
+#mob span {
+    color: white;
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 0;
+    padding: 0px 3rem;
+    display: none;
+}
+
+
+
+.search a {
+    color:white;
+    background-color: #c74040e3;
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    padding: 0px 3rem;
+    /* background: none; */
+}
+
+.navigation-bar .search a:hover {
+    background-color: #caafaf;
+    color:white;
+}
+
+.slider {
+    margin-top: 5rem;
+    height: max-content;
+    /* width: 100%; */
+    max-width: 100%;
+    position: relative;
+    
+}
+
+.slider__background {
+    /* max-width: 100%; */
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.slider__text {
+    margin: auto;
+    text-align: center;
+    color: #ec3700;
+    max-width: 95%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5rem;
+}
+
+.slider__text-primary {
+    display: block;
+    font-size: 7rem;
+}
+
+.slider__text-secondary {
+    display: block;
+    font-size: 2.5rem;
+}
+
+.content .content__container {
+    width: 80rem;
+    max-width: 80rem;
+    margin: auto;
+    padding: 7rem 3rem;
+    height: max-content;
+}
+
+.content .content-head {
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem 0px;
+}
+
+.content .content-sub-head {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+    padding: 1rem 0px;
+}
+
+.content .band-description .desc {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 1.5rem 0px;
+}
+
+.content .band-member {
+    padding: 3.5rem 0px;
+    text-align: center;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.content .member {
+    width: calc(100% /3);
+    float: left;
+    margin: auto;
+}
+
+.member-avatar {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.content .tour-date {
+    margin: auto;
+    background-color: #000000;
+    color: white;
+    box-sizing: border-box;
+}
+
+.ticket  li{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket__status {
+    background-color: #c53e1d;
+    color: white;
+    float:right;
+    padding: 4px;
+    margin-top: -4px;
+    margin-right: 2rem;
+}
+
+.ticket li:last-child .ticket__status {
+    background-color: #2e2c2c;
+    border-radius: 1.5rem;
+}
+
+.perform-place {
+    padding: 3.5rem 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0px -2rem;
+    
+}
+
+.place {
+    width: calc(100% /3);
+    float: left;
+    margin: auto;
+    padding: 1rem;
+}
+
+.place-avatar {
+    width: 100%;
+}
+
+.place-avatar:hover {
+    opacity: 0.5;
+}
+
+.place__info {
+    background-color: white;
+    color: black;
+    text-align: left;
+    margin-top: -4px;
+    padding: 1.5rem;
+}
+
+.place__info p {
+    margin: 1.5rem 0px;
+}
+
+.place__info .place__info-day {
+    font-size: 1.5rem;
+}
+
+.buy-ticket {
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.buy-ticket:hover {
+    background-color: #aaa0a0;
+    color:black;
+}
+
+.content .contact {
+    background-color: white;
+    color: #000000;
+    height: max-content;
+}
+
+.contact__info {
+    padding: 3rem 0px;
+    height: max-content;;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-icon {
+    width: 3rem;
+    font-size: 2rem;
+}
+
+.contact__info-text {
+    font-size: 2rem;
+    width: 50%;
+    float: left;
+}
+
+.contact__info-form {
+    font-size: 2rem;
+    width: 50%;
+    float: right;
+}
+
+.row-input {
+    height: 32px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact__info-form .name-input {
+    width: 48%;
+    padding: 8px;
+    float: right;
+}
+
+.contact__info-form .mail-input {
+    width: 48%;
+    padding: 8px;
+    float: left;
+}
+
+.contact__info-form .mess-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.send-info {
+    background-color: black;
+    color: white;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    margin: 2rem;
+    float: right;
+}
+
+.send-info:hover {
+    background-color: #aaa0a0;
+    color:black;
+    cursor: pointer;
+}
+
+.map {
+    height: auto;
+    width: 100%;
+}
+
+.footer {
+    font-size: 3rem;
+    text-align: center;
+    background-color: white;
+    color: #000000;
+}
+
+.footer-icon:hover {
+    color: #c53e1d;
+    cursor: pointer;
+}
+
+.footer-icon:active {
+    color:#2715c7
+}
+.footer-icon {
+    color: #000000;
+}
+
+@media(min-width: 625px) and (max-width: 1023px) {
+
+    .content .content__container {
+        width: 95%;
+    }
+
+}
+
+@media(max-width: 624px) {
+
+    .navigation-bar > ul > li {
+        float: none;
+    }
+
+    #nav {
+        overflow: hidden;
+    }
+
+    .navigation-bar ul li:not(:first-child) a  {
+        display: block;
+    }
+
+    #mob span {
+        display:block;
+    }
+
+    .mobile-sub-navigation-bar span:hover {
+        background-color: #6e6e6e;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .slider__text {
+        display: none;
+    }
+
+    .content .content__container {
+        width: 95%;
+    }
+
+    .content .member {
+        width: 100%;
+    }
+
+    .place {
+        width: 100%;
+    }
+
+    .contact__info-text {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+    
+    .contact__info-form {
+        width: 100%;
+    }
+
+    .contact__info-form .name-input,
+    .contact__info-form .mail-input,
+    .contact__info-form .mess-input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
